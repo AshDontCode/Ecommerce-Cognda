@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {ProductCard} from './ProductCard';
+import {Shimmer} from './Shimmer';
 
 export const ProductFeed = ()=>{
     const [products, setProducts] = useState([]);
@@ -17,7 +18,7 @@ export const ProductFeed = ()=>{
         })
     },[])
 
-    const cards = products.map((product)=>{
+    const cards = (products.length==0) ? <Shimmer/> : products.map((product)=>{
         return <ProductCard product={product} key={product.id}></ProductCard>
     })
 
