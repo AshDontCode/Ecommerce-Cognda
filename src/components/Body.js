@@ -1,7 +1,7 @@
+import {ProductFeed} from './ProductFeed';
+
 export const Body = ()=>{
     return(
-        <div className="header">
-
-        </div>
+        <ProductFeed></ProductFeed>
     )
 }
