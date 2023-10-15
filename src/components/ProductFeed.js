@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import {ProductCard} from './ProductCard';
 import {Shimmer} from './Shimmer';
 
-export const ProductFeed = ()=>{
+export const ProductFeed = (props)=>{
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
@@ -18,12 +18,12 @@ export const ProductFeed = ()=>{
         })
     },[])
 
-    const cards = (products.length==0) ? <Shimmer/> : products.map((product)=>{
-        return <ProductCard product={product} key={product.id}></ProductCard>
+    const cards = (products.length===0) ? <Shimmer/> : products.map((product)=>{
+        return <ProductCard product={product} key={product.id} addToCart={props.addToCart} showCart={props.showCart}></ProductCard>
     })
 
     return(
-        <div className="d-flex flex-wrap ">
+        <div className="d-flex flex-wrap m-3">
             {cards}
         </div>
     )
