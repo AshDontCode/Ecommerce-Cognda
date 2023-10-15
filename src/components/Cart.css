@@ -1,0 +1,16 @@
+.cart-view{
+
+}
+.cart-heading{
+background-color: gray;
+color: white;
+text-align: center;
+}
+
+.cart-info>p{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.cart-empty{
+    color:red;
+}
