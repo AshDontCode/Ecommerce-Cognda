@@ -1,6 +1,50 @@
 .prod-card{
     min-width: 250px;
+    background-color: white;
+    border: none;
+    /* text-align: center; */
+    transition: all 1s;
+
+   
+    
+}
+.prod-card:hover{
+    transform: scale(.9);
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.505);
 }
 .card{
-    margin: 0;
+    margin: 5px;
+    width: 400px;
+}
+
+.prod-card-img{
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.prod-card-title{
+    margin: 10px 2px;
+    font-weight: 600;
+
+}
+.prod-card-disc{
+    color: rgb(116, 116, 116);;
+}
+.prod-card-price{
+
+}
+.prod-card-rating{
+
+
+}
+.addCart-btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+}
+.addCart-btn:hover{
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.458);
 }

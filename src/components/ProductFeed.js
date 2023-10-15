@@ -4,6 +4,7 @@ import React from 'react';
 import {ProductCard} from './ProductCard';
 import {Shimmer} from './Shimmer';
 import {filterProducts} from '../utility/filter';
+import './ProductFeed.css';
 
 export const ProductFeed = (props)=>{
     const [products, setProducts] = useState([]);
@@ -48,12 +49,14 @@ export const ProductFeed = (props)=>{
 
     return(
         <React.Fragment>
-        <div className='d-flex filters'>
-                        <input type='checkbox' value="men" checked={filters.includes('men')} onChange={handleCheckboxChange}/>Men's Clothing
-                        <input type='checkbox' value="women" checked={filters.includes('women')} onChange={handleCheckboxChange}/>Women's Clothing
-                        <input type='checkbox' value="four+" checked={filters.includes('four+')} onChange={handleCheckboxChange}/>4 star and above
+            <h3 className='filter-heading' style={{margin:"0"}}>Filter</h3>
+        <div className='d-flex justify-content-center filters custom-filter'>
+                        
+                        <input className='checkBx' type='checkbox' value="men" checked={filters.includes('men')} onChange={handleCheckboxChange}/>Men's Clothing
+                        <input className='checkBx'type='checkbox' value="women" checked={filters.includes('women')} onChange={handleCheckboxChange}/>Women's Clothing
+                        <input className='checkBx' type='checkbox' value="four+" checked={filters.includes('four+')} onChange={handleCheckboxChange}/>4 star and above
             </div>
-        <div className="d-flex flex-wrap m-3">
+        <div className="d-flex flex-wrap justify-content-between" style={{width:"80%", margin:"auto"}}>
             {cards}
         </div>
         </React.Fragment>

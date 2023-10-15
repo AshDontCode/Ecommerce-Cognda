@@ -2,12 +2,7 @@
     ::-webkit-scrollbar{
         display: none;
     }
-
-    .cart-scroll{
-     
-        box-shadow: 1px 1px 1px red;
-    }
-
+    
     .feed{
         background-color: rgb(240, 240, 240);
     }
