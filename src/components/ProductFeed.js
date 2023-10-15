@@ -29,6 +29,9 @@ export const ProductFeed = (props)=>{
             return res.json();
         })
         .then((json)=>{
+            json = json.filter((item)=>{
+                return item.category==="men's clothing" || item.category==="women's clothing";
+            })
             setProducts(json)
         })
         .catch((err)=>{
