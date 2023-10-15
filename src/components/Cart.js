@@ -9,6 +9,7 @@ export const Cart = (props)=>{
     const cartUi = props.cart.length===0?
                                          "Cart Empty" :
                                          <React.Fragment>
+                                            <h4>Cart</h4>
                                             <h4>{"Total items: " + getTotalQty(props.cart)}</h4>
                                             <h4>{"Total cost: " + getTotalPrice(props.cart)}</h4>
                                          

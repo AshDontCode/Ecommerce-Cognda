@@ -16,7 +16,7 @@ export const Body = (props)=>{
                     <ProductFeed addToCart={props.addToCart} showCart = {props.showCart}/>
                     </div>
                     {props.cartVisible &&
-                    <div className='w-25 cart-scroll'  style={{position:"fixed", right:"0px", top:"60px", maxHeight:"700px", overflow:"scroll", zIndex: "100"}}>
+                    <div className='w-25 cart-scroll'  style={{position:"fixed", right:"20px", top:"100px", bottom:"20px", minWidth:"370px" , overflow:"scroll", zIndex: "100"}}>
                         <Cart cart={props.cart} addToCart={props.addToCart} removeFromCart={props.removeFromCart} />
                     </div>
                     }
