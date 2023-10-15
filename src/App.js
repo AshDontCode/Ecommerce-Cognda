@@ -28,13 +28,12 @@ function App() {
     setCart((prevCart)=>{
       if(getTotalQty(prevCart)===1 && cartVisible)
       toggleCart();
-      const cart = JSON.parse(JSON.stringify(prevCart)); //spread operator was not working here
-      const item = cart.find((el)=>el.id===id);
-      const newCart = cart.filter((el)=>el.id!==id);
-      item.qty = item.qty-1;
-      if(item.qty>0)
-        newCart.push(item);
-      return newCart;
+      var cart = JSON.parse(JSON.stringify(prevCart)); //spread operator was not working here
+      const itemIndex = cart.findIndex((el)=>el.id===id);
+      cart[itemIndex].qty = cart[itemIndex].qty-1;
+      if(cart[itemIndex].qty===0)
+        cart = cart.filter((el)=>el.id!==id);
+      return cart;
     })
   }
 
