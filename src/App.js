@@ -4,6 +4,8 @@ import {Header} from './components/Header'
 import {Footer} from './components/Footer'
 import {Body} from './components/Body'
 
+import { getTotalQty } from './utility/cart';
+
 function App() {
   const [cartVisible, setCartVisible] = useState(false);
   const [cart, setCart] = useState([])
@@ -24,6 +26,8 @@ function App() {
 
   const removeFromCart = (id)=>{
     setCart((prevCart)=>{
+      if(getTotalQty(prevCart)===1 && cartVisible)
+      toggleCart();
       const cart = JSON.parse(JSON.stringify(prevCart)); //spread operator was not working here
       const item = cart.find((el)=>el.id===id);
       const newCart = cart.filter((el)=>el.id!==id);
@@ -31,15 +35,6 @@ function App() {
       if(item.qty>0)
         newCart.push(item);
       return newCart;
-      // const item = prevCart.find((el)=>el.id===id);
-      // const newQty = item.qty===1?0:item.qty-1;
-      // item.qty = newQty;
-      // var newCart = JSON.parse(JSON.stringify(prevCart)); //spread operator was not working here
-      // newCart = newCart.filter((el)=>{
-      //   return el.id!==id
-      // });
-      // newCart.push(item);
-      // return newCart;
     })
   }
 
