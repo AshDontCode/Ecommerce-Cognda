@@ -17,7 +17,7 @@ export const CartItem = (props)=>{
     }
 
     return(
-        <div className="card m-3 p-3 d-flex">
+        <div className="card m-3 p-3 d-flex" style={{minWidth:"250px"}}>
             <img src={image} alt={title} width="200px" height="200px"></img>
             <h4>{trim(title, 15)}</h4>
             <h6>{trim(description, 30)}</h6>

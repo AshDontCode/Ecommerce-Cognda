@@ -1,0 +1,36 @@
+
+
+
+.header{
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.logo img{
+    mix-blend-mode: multiply;
+}
+.nav li{
+margin: 0xp 10px;
+padding: 10px;
+}
+.nav .nav-link{
+    border: none;
+    color: Black;
+    background-color: rgb(233, 233, 233);
+    transition: all .5s;
+}
+.nav-link:hover{
+    background-color: rgb(215, 215, 215);
+    /* border-radius: 10px; */
+}
+.cart {
+    transition: all .5s;
+}
+.cart:hover{
+    transform: scale(1.2);
+}

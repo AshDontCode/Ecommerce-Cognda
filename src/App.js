@@ -49,7 +49,7 @@ function App() {
     <div className="App">
         <Header cart={cart} cartVisible={cartVisible} toggleCart={toggleCart}></Header>
         <Body cart={cart} cartVisible={cartVisible} showCart={showCart} addToCart={addToCart} removeFromCart={removeFromCart}></Body>
-        <Footer></Footer>
+        <Footer/>
     </div>
   );
 }
