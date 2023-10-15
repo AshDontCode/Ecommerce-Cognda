@@ -1,0 +1,46 @@
+.custom-card img{
+    mix-blend-mode:multiply;
+    padding: 20px;
+}
+.custom-card{
+    padding: 10px;    
+    margin: 10px 0px;
+}
+.card-title{
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.card-disc{
+    color: rgb(116, 116, 116);
+}
+.btn-wrapper{
+    align-items: center;
+    /* border: 1px solid rgba(128, 128, 128, 0.441); */
+    width: fit-content;
+    background-color: rgba(228, 228, 228, 0.159);
+}
+
+.custom-card-button{
+        /* border: 1px solid red; */
+        
+        border: none;
+        color: white;
+        padding: 5px 10px;
+
+}
+
+.add-btn{
+    background-color: #4CAF50; ;
+}
+
+.rmv-btn{
+    background-color: #f44336;
+}
+.buy-btn{
+    margin: 10px 0px;
+    border: none;
+    padding: 5px;
+    background-color: orange;
+
+}

@@ -9,6 +9,14 @@
 
 .logo{
     margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-btn{
+    border: none;
+    background-color: rgba(178, 34, 34, 0);
 }
 
 .logo img{
@@ -33,4 +41,9 @@ padding: 10px;
 }
 .cart:hover{
     transform: scale(1.2);
+}
+
+.text-danger{
+    font-size: 15px;
+    font-weight:bold;
 }

@@ -1,3 +1,10 @@
+import './CartItem.css';
+
+
+
+
+
+
 export const CartItem = (props)=>{
     const trim = (str, len) => {
         return str.substring(0,len)+"...";
@@ -17,17 +24,18 @@ export const CartItem = (props)=>{
     }
 
     return(
-        <div className="card m-3 p-3 d-flex" style={{minWidth:"250px"}}>
-            <img src={image} alt={title} width="200px" height="200px"></img>
-            <h4>{trim(title, 15)}</h4>
-            <h6>{trim(description, 30)}</h6>
-            <h5>{"₹ "+price}</h5>
-            <h6>{rating.rate}<img src="https://i.pngimg.me/thumb/f/720/m2H7H7A0m2m2i8i8.jpg" width="25px" height="15px" alt="star icon"></img>{" ("+rating.count+")"}</h6>
-            <div className="d-flex mt-2">
-            <button className="btn btn-danger rounded-circle me-2" style={style} onClick={removeItem}>-</button>
+        <div className="card d-flex custom-card" style={{minWidth:"250px"}}>
+            <img src={image} alt={title} width="200px" height="200px"style={{margin:"auto"}}></img>
+            <h4 className='card-title'>{trim(title, 15)}</h4>
+            <h6 className='card-disc'>{trim(description, 30)}</h6>
+            <h5 className='card-price' >{"₹ "+price}</h5>
+            <h6>{rating.rate}<i class="fa-solid fa-star" style={{color: "#ff9529", margin:"0px 5px"}}></i>{" ("+rating.count+")"}</h6>
+            <div className="d-flex mt-2 btn-wrapper">
+            <button className="me-2 custom-card-button add-btn" style={style} onClick={removeItem}>-</button>
             <h5>{qty}</h5>
-            <button className="btn btn-primary rounded-circle ms-2" style={style} onClick={addItem} >+</button>
+            <button className="ms-2 custom-card-button rmv-btn" style={style} onClick={addItem} >+</button>
             </div>
+            <button className='buy-btn'>Buy Now</button>
         </div>
     )
 }
