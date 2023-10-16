@@ -14,14 +14,19 @@
 }
 .card{
     margin: 5px;
-    width: 400px;
+    width: 300px;
 }
 
 .prod-card-img{
     mix-blend-mode: multiply;
     object-fit: contain;
     padding: 10px;
+    margin: auto;
+    /* box-shadow: 5px 5px 15px gray; */
+    transition: all 1s;
 }
+
+
 
 .prod-card-title{
     margin: 10px 2px;
@@ -32,19 +37,19 @@
     color: rgb(116, 116, 116);;
 }
 .prod-card-price{
-
+    font-weight: 700;
 }
 .prod-card-rating{
 
 
 }
 .addCart-btn{
-    background-color: #4CAF50;
+    background-color: #19202C;
     border: none;
     color: white;
 }
 .addCart-btn:hover{
-    background-color: #4CAF50;
+    background-color: #19202C;
     color: white;
     box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.458);
 }

@@ -1,0 +1,36 @@
+/* ImageGrid.css */
+
+.pop-heading{
+    text-align: center;
+    color: #19202C;
+    padding: 30px;
+    margin: 10px 0px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.image-grid {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+    }
+  }
+  
+  .image {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+.image-grid .image img{
+    transition: all .5s;
+}
+.image-grid .image img:hover{
+    transform: scale(1.1);
+}
+
+  

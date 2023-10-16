@@ -1,16 +1,28 @@
 .cart-view{
-
+    width: 100%;
+    /* margin: auto; */
+    /* text-align: center; */
+    /* background-color: red; */
 }
 .cart-heading{
-background-color: gray;
+background-color: #19202C;
 color: white;
 text-align: center;
+padding: 10px;
 }
 
 .cart-info>p{
     display: inline-block;
     margin: 0px 10px;
+    font-size: 17px;
 }
 .cart-empty{
     color:red;
+    padding: 10px;
+}
+.item-bg{
+    transition: all 1s;
+    box-shadow: 5px 5px 5px rgb(84, 84, 84);
+    border-radius: 10px 0px 0px 10px;
+
 }

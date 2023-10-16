@@ -25,7 +25,7 @@ export const CartItem = (props)=>{
 
     return(
         <div className="card d-flex custom-card" style={{minWidth:"250px"}}>
-            <img src={image} alt={title} width="200px" height="200px"style={{margin:"auto"}}></img>
+            <img src={image} alt={title} width="200px" height="200px" style={{margin:"auto"}}></img>
             <h4 className="card-title">{trim(title, 15)}</h4>
             <h6 className="card-disc">{trim(description, 30)}</h6>
             <h5 className="card-price" >{"₹ "+price}</h5>

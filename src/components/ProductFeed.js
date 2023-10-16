@@ -52,14 +52,14 @@ export const ProductFeed = (props)=>{
 
     return(
         <React.Fragment>
-            <h3 className='filter-heading' style={{margin:"0"}}>Filter</h3>
+            <h1 className='filter-heading' style={{margin:"0"}}>FILTER</h1>
         <div className='d-flex justify-content-center filters custom-filter'>
                         
                         <input className='checkBx' type='checkbox' value="men" checked={filters.includes('men')} onChange={handleCheckboxChange}/>Men's Clothing
                         <input className='checkBx'type='checkbox' value="women" checked={filters.includes('women')} onChange={handleCheckboxChange}/>Women's Clothing
                         <input className='checkBx' type='checkbox' value="four+" checked={filters.includes('four+')} onChange={handleCheckboxChange}/>4 star and above
             </div>
-        <div className="d-flex flex-wrap justify-content-between" style={{width:"80%", margin:"auto"}}>
+        <div className="d-flex flex-wrap justify-content-around" style={{width:"80%", margin:"auto"}}>
             {cards}
         </div>
         </React.Fragment>

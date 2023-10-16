@@ -1,15 +1,20 @@
 .filter-heading{
     text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
     /* margin: 10px; */
     font-weight: 600;
-    background-color: white;
-    padding: 10px;
+    background-color: #19202C;
+    padding: 30px;
+    color: white;
 }
 .custom-filter{
-    background-color: white;
+    background-color: #19202C;
     padding: 10px;
     align-items: center;
+    color:white;
 }
 .custom-filter>input{
     margin: 10px;
+    color: white;
 }

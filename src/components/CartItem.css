@@ -1,10 +1,12 @@
+
 .custom-card img{
     mix-blend-mode:multiply;
     padding: 20px;
 }
 .custom-card{
     padding: 10px;    
-    margin: 10px 0px;
+    margin: 10px 0px 0px 25px;
+    border: none;
 }
 .card-title{
     cursor: pointer;
@@ -41,6 +43,7 @@
     margin: 10px 0px;
     border: none;
     padding: 5px;
-    background-color: orange;
+    background-color: #722119;
+    color: white;
 
 }

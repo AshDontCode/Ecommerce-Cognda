@@ -2,7 +2,7 @@
 
 
 .header{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 
 }
@@ -28,8 +28,9 @@ padding: 10px;
 }
 .nav .nav-link{
     border: none;
-    color: Black;
-    background-color: rgb(233, 233, 233);
+    color: #19202C;
+    background-color: rgb(255, 255, 255);
+
     transition: all .5s;
 }
 .nav-link:hover{

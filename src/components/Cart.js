@@ -29,7 +29,7 @@ export const Cart = (props)=>{
                                         </React.Fragment>
 
     return (
-        <div className='card m-3 bg-light ps-5 pe-5' style={{minWidth:"350px"}}>
+        <div className='item-bg' style={{minWidth:"350px", maxHeight:"650px", overflow:"scroll",backgroundColor:"white", textAlign:"center", padding:"10px"}}>
             {cartUi}
         </div>
     )
